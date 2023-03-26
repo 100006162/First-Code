@@ -7,15 +7,17 @@
   body {
     display: flex;
     flex-direction: column;
+    font-family: Calibri;
+    font-weight: 300;
   }
-
+  
   .div-horizontal {
     width: 100%;
     text-align: center;
   }
 
   .first {
-    height: 25vh;
+    height: 50vh; /* aumentar la altura del div */
     background-image: url('img/header.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -24,6 +26,7 @@
     flex-direction: column;
     justify-content: center;
   }
+  
 
   .first h1 {
     color: rgb(0, 0, 0);
@@ -41,17 +44,61 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  
+  .feedback-container h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+  }
 
   .image-container {
     position: relative;
-    width: 33.33%;
-    height: 50vw;
+    width: calc(33.33% - 10px); /* reducir el tamaño del contenedor y agregar un margen de 10px */
+    margin-right: 10px; /* agregar un margen derecho de 10px */
+    height: 150px; /* altura reducida */
     overflow: hidden;
   }
-
-  .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  
+  .image-container:last-child {
+    margin-right: 0; /* eliminar el margen derecho del último elemento */
   }
+  
+  .image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100%;
+  }
+
+  .feedback-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(60, 141, 218) ;
+    color: white;
+    font-family: Calibri;
+    height: 100px;
+  }
+  
+  .feedback-container h3 {
+    margin: 0;
+  }
+  
+  .feedback-container h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .feedback-container .feedback-text {
+    text-align: center;
+  }
+  
+  .feedback-container .feedback-text p {
+    font-size: 0.8rem;
+    margin: 5px 0 0 0;
+  }
+  

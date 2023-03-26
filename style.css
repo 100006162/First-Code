@@ -201,3 +201,91 @@
     font-size: 1rem;
     color: rgb(255, 255, 255);
   }
+
+  @media screen and (max-width: 600px) {
+    /* Estilos a aplicar para pantallas de hasta 600px de ancho */
+  
+    .first {
+      height: auto;
+      padding-bottom: 2rem; /* Agregar un espacio inferior adicional */
+      width: 100%; /* Hacer que ocupe todo el ancho de la página */
+      max-width: 100%; /* Hacer que no exceda el ancho de la página */
+      box-sizing: border-box; /* Asegurar que el padding no afecte el ancho */
+    }
+  
+    .first h1 {
+      font-size: 3rem;
+    }
+  
+    .first h2 {
+      font-size: 1.5rem;
+    }
+    
+    .image-container {
+      width: 50%;
+      margin-right: 0;
+      height: 100px; /* Ajustar la altura del contenedor */
+      margin-bottom: 10px;
+    }
+  
+    .image-container:nth-child(2n) {
+      margin-right: 0;
+    }
+    
+    .image-container img {
+      position: static;
+      transform: none;
+      width: 100%;
+      height: auto;
+      max-height: 80px; /* Ajustar la altura de la imagen */
+    }
+  
+    .split-container {
+      flex-direction: column;
+    }
+  
+    .text-side,
+    .image-side {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .text-side {
+      padding: 1rem;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .text-side h3 {
+      font-size: 2rem;
+    }
+  
+    .text-side p {
+      font-size: 1.4rem;
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .text-side ul li {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    .footer ul li {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .black-footer p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  

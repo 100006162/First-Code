@@ -7,7 +7,7 @@
   body {
     display: flex;
     flex-direction: column;
-    font-family: Calibri;
+    font-family: Calibri, sans-serif;
     font-weight: 300;
   }
   
@@ -17,7 +17,7 @@
   }
 
   .first {
-    height: 50vh; /* aumentar la altura del div */
+    height: 50vh;
     background-image: url('img/header.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -101,4 +101,53 @@
     font-size: 0.8rem;
     margin: 5px 0 0 0;
   }
-  
+  .feedback-container .feedback-text p {
+    font-size: 0.8rem;
+    margin: 5px 0 0 0;
+  }
+
+  .split-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .text-side,
+  .image-side {
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .image-side img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Cambiar a 'flex-start' para mover el contenido hacia arriba */
+    align-items: flex-start;
+    text-align: justify;
+    padding: 2rem; /* Ajustar el espacio alrededor si es necesario */
+  }
+
+  .text-side h3 {
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .text-side p {
+    font-size: 1.6rem;
+    max-width: 90%; /* Ajustar el ancho máximo del párrafo si es necesario */
+    margin-bottom: 1rem;
+  }
+
+  .text-side ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .text-side ul li {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }

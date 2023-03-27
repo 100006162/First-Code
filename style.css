@@ -53,14 +53,14 @@
 
   .image-container {
     position: relative;
-    width: calc(33.33% - 10px); /* reducir el tamaño del contenedor y agregar un margen de 10px */
-    margin-right: 10px; /* agregar un margen derecho de 10px */
-    height: 150px; /* altura reducida */
+    width: calc(33.33% - 10px);
+    margin-right: 10px; 
+    height: 200px; 
     overflow: hidden;
   }
   
   .image-container:last-child {
-    margin-right: 0; /* eliminar el margen derecho del último elemento */
+    margin-right: 0; 
   }
   
   .image-container img {
@@ -118,17 +118,17 @@
   }
 
   .image-side img {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 
   .text-side {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Cambiar a 'flex-start' para mover el contenido hacia arriba */
+    justify-content: flex-start;
     align-items: flex-start;
     text-align: justify;
-    padding: 2rem; /* Ajustar el espacio alrededor si es necesario */
+    padding: 2rem; 
   }
 
   .text-side h3 {
@@ -138,7 +138,7 @@
 
   .text-side p {
     font-size: 1.6rem;
-    max-width: 90%; /* Ajustar el ancho máximo del párrafo si es necesario */
+    max-width: 90%; 
     margin-bottom: 1rem;
   }
 
@@ -154,7 +154,7 @@
   .footer {
     display: flex;
     justify-content: space-between;
-    background-color: rgba(128, 128, 128, 0.5); /* Fondo grisáceo transparente */
+    background-color: rgba(128, 128, 128, 0.5);
     padding: 2rem;
   }
 
@@ -203,14 +203,14 @@
   }
 
   @media screen and (max-width: 600px) {
-    /* Estilos a aplicar para pantallas de hasta 600px de ancho */
+    
   
     .first {
       height: auto;
-      padding-bottom: 2rem; /* Agregar un espacio inferior adicional */
-      width: 100%; /* Hacer que ocupe todo el ancho de la página */
-      max-width: 100%; /* Hacer que no exceda el ancho de la página */
-      box-sizing: border-box; /* Asegurar que el padding no afecte el ancho */
+      padding-bottom: 2rem; 
+      width: 100%; 
+      max-width: 100%; 
+      box-sizing: border-box; 
     }
   
     .first h1 {
@@ -224,7 +224,7 @@
     .image-container {
       width: 50%;
       margin-right: 0;
-      height: 100px; /* Ajustar la altura del contenedor */
+      height: 100px; 
       margin-bottom: 10px;
     }
   
@@ -237,7 +237,7 @@
       transform: none;
       width: 100%;
       height: auto;
-      max-height: 80px; /* Ajustar la altura de la imagen */
+      max-height: 80px; 
     }
   
     .split-container {

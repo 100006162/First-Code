@@ -229,7 +229,7 @@
     }
   
     .image-container {
-      width: calc(50% - 5px);
+      width: calc(50% - 10px);
       margin-bottom: 10px;
     }
   
